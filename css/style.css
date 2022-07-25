@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Varela Round', sans-serif;
+    width: 100%;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.gridIndexPadre {
+    display: grid;
+    grid-template-areas:
+    "header header header header"
+    "portada portada portada portada"
+    "main main main main"
+    "secVideo secVideo secUbi secUbi"
+    "secProducto secProducto secProducto secProducto"
+    "footer footer footer footer";
+    gap: 20px;
+}
+
+.gridTiendaPadre {
+    display: grid;
+    grid-template-areas: 
+    "header header header header"
+    "main main main main"
+    "itemUno itemDos itemTres itemCuatro"
+    "itemCinco itemSeis itemSiete itemOcho"
+    "footer footer footer footer";
+    gap: 20px;;
+}
+
+/* HEADER */
+header {
+    grid-area: header;
+    background-color: #DF2935;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoBarra img {
+    width: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.botonesBarra ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.botonesBarra li {
+    color: black;
+}
+
+.botonesBarra a {
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: antiquewhite;
+}
+
+.logoCarrito img {
+    width: 40px;
+    margin-right: 10px;
+}
+/* FINAL HEADER */
+
+
+
+/* FOOTER */
+footer {
+    grid-area: footer;
+    background-color: #DF2935;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 5px;
+}
+
+.listaPie {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* align-items: flex-start; */
+    margin-top: 5px;
+}
+
+.logoPie img {
+    width: 40px;
+}
+
+.logoRedes ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.logoRedes img {
+    width: 30px;
+}
+/* FINAL FOOTER */
+
+
+
+/* Main Index */
+main {
+    grid-area: main;
+    width: 100%;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    /* margin-left: 20px;
+    margin-right: 20px; */
+    gap: 10px;
+}
+
+main p {
+    width: 90%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.portada {
+    grid-area: portada;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portada img {
+    width: 90%;
+}
+
+.seccionVideo {
+    grid-area: secVideo;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 20px; */
+    gap: 5px;
+    width: 100%;
+}
+
+.seccionUbi {
+    grid-area: secUbi;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    gap: 5px;
+    width: 100%;
+}
+
+.textoUbi {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.algunosProductos {
+    grid-area: secProducto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.textoProducto {
+    display: flex;
+    gap: 20px;
+}
+
+.itemIndex {
+    display: flex;
+    text-align: center;
+    gap: 10px;
+}
+
+.itemA, .itemB, .itemC, .itemD {
+    border: black solid 1px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+} 
+
+.algunosProductos img {
+    width: 300px;
+}
+
+/* Main Tienda */
+.itemTienda {
+    border: black solid 1px;
+    gap: 5px;
+    text-align: center;
+    padding: 5px;
+}
+
+.itemUno {
+    grid-area: itemUno;
+}
+
+.itemDos {
+    grid-area: itemDos;
+}
+
+.itemTres {
+    grid-area: itemTres;
+}
+
+.itemCuatro {
+    grid-area: itemCuatro;
+}
+
+.itemCinco {
+    grid-area: itemCinco;
+}
+
+.itemSeis {
+    grid-area: itemSeis;
+}
+
+.itemSiete {
+    grid-area: itemSiete;
+}
+
+.itemOcho {
+    grid-area: itemOcho;
+}
+
+.itemTienda img {
+    width: 300px;
+    height: 400px;
+}
+
+.botonItem {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+}
+/* Final Main Tienda */
+
+
+
+/* Main Locales */
+.zonauno, .zonados, .zonatres {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    text-align: center;
+}
+
+.seccionMapaLocales {
+    display: flex;
+    margin-bottom: 20px;
+
+}
+
+
+.local img {
+    width: 300px;
+}
+/* FINAL MAIN LOCALES */
+
+
+
+/* Media Query */
+@media (max-width: 770px) {
+    .gridTiendaPadre {
+        display: grid;
+        grid-template-areas: 
+        "header header header"
+        "main main main"
+        "itemUno itemDos itemTres" 
+        "itemCuatro itemCinco itemSeis" 
+        "itemSiete itemOcho none"
+        "footer footer footer";
+        gap: 20px;
+    }
+
+    .itemIndex {
+        display: grid;
+        /* flex-direction: row;
+        align-content: stretch; */
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+@media (max-width: 450px) {
+    .gridIndexPadre {
+        display: grid;
+        grid-template-areas:
+        "header header"
+        "portada portada"
+        "main main"
+        "secVideo secVideo"
+        "secUbi secUbi"
+        "secProducto secProducto"
+        "footer footer";
+        gap: 20px;
+    }
+
+    .itemIndex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .botonesBarra ul {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .gridTiendaPadre {
+        display: grid;
+        grid-template-areas: 
+        "header header"
+        "main main"
+        "itemUno itemDos" 
+        "itemTres itemCuatro"
+        "itemCinco itemSeis" 
+        "itemSiete itemOcho"
+        "footer footer";
+        gap: 20px;
+    }
+}
