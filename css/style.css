@@ -57,6 +57,7 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    background: radial-gradient(#DF2935, black);
 }
 
 .logoBarra img {
@@ -213,11 +214,16 @@ main p {
     gap: 10px;
 }
 
-.itemA, .itemB, .itemC, .itemD {
+
+.item {
     border: black solid 1px;
     padding-top: 20px;
     padding-bottom: 20px;
-} 
+}
+
+.item:hover {
+    border: #DF2935 solid 1px;
+}
 
 .algunosProductos img {
     width: 300px;
@@ -225,10 +231,14 @@ main p {
 
 /* Main Tienda */
 .itemTienda {
-    border: black solid 1px;
+    border: black solid 2px;
     gap: 5px;
     text-align: center;
     padding: 5px;
+}
+
+.itemTienda:hover {
+    border: #DF2935 2px solid;
 }
 
 .itemUno {

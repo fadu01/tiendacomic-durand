@@ -9,10 +9,14 @@
     <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
     <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css">
+    <!-- Animated CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body class="gridIndexPadre">
 <!-- BARRA DE NAVEGACION -->
-    <header id="encabezado">
+    <header id="encabezado" class="animate__animated animate__flipInX">
         <span class="logoBarra">
             <a href="./index.html"><img src="./img/logo.png" alt="logo"></a>
         </span>
@@ -63,25 +67,25 @@
             <a href="pages/tienda.html"><h2>Ver Mas</h2></a>
         </div>
         <div class="itemIndex">
-            <div class="itemA">
+            <div class="item itemA">
                 <img src="https://tap-multimedia-1172.nyc3.digitaloceanspaces.com/productimage/43788/9786076360927.jpg" alt="imagen comic">
                 <p>$9999</p>
                 <input type="button" value="Comprar">
                 <input type="button" value="Añadir">
             </div>
-            <div class="itemB">
+            <div class="item itemB">
                 <img src="https://tap-multimedia-1172.nyc3.digitaloceanspaces.com/productimage/43761/9789874068675.jpg" alt="imagen comic">
                 <p>$9999</p>
                 <input type="button" value="Comprar">
                 <input type="button" value="Añadir">
             </div>
-            <div class="itemC">
+            <div class="item itemC">
                 <img src="https://tap-multimedia-1172.nyc3.digitaloceanspaces.com/productimage/44243/9786076361993.jpg" alt="imagen comic">
                 <p>$9999</p>
                 <input type="button" value="Comprar">
                 <input type="button" value="Añadir">
             </div>
-            <div class="itemD">
+            <div class="item itemD">
                 <img src="https://tap-multimedia-1172.nyc3.digitaloceanspaces.com/productimage/42914/9788492534746.jpg" alt="imagen comic">
                 <p>$9999</p>
                 <input type="button" value="Comprar">
@@ -117,6 +121,10 @@
         </div>  
         <p class="frasePie">Tienda ficticia creada por <strong>Fabian Durand</strong>.</p>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
 
