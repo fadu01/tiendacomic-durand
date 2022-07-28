@@ -300,6 +300,10 @@ main p {
 
 .seccionMapaLocales {
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
     margin-bottom: 20px;
 
 }
