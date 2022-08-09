@@ -24,19 +24,6 @@ body {
     padding: 5px; }
   body .itemT:hover {
     border: #DF2935 1px solid; }
-  @media (max-width: 767px) {
-    body .seccionUbi {
-      margin-top: 2rem; }
-    body .botonesBarra ul {
-      display: flex;
-      flex-direction: column; }
-    body .listaPie {
-      display: flex;
-      flex-direction: column;
-      align-content: center; }
-    body .logoRedes ul {
-      align-content: space-between;
-      gap: 5px; } }
 
 header {
   background: radial-gradient(#DF2935, black); }
@@ -128,11 +115,32 @@ footer {
     margin-top: 5px; }
     footer .listaPie .logoPie img {
       width: 40px; }
-    footer .listaPie .logoRedes ul {
+    footer .listaPie .logoRedes {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       flex-wrap: wrap;
-      justify-content: space-evenly;
-      gap: 10px; }
-      footer .listaPie .logoRedes ul li img {
-        width: 30px; }
+      text-align: center; }
+      footer .listaPie .logoRedes ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: center;
+        gap: 10px; }
+        footer .listaPie .logoRedes ul li img {
+          width: 30px; }
+
+/* Media Query */
+@media (max-width: 767px) {
+  .seccionUbi {
+    margin-top: 2rem; }
+  header .botonesBarra ul {
+    display: flex;
+    flex-direction: column;
+    gap: 3px; }
+  footer .listaPie {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    footer .listaPie .logoRedes ul {
+      justify-content: center; } }
