@@ -13,17 +13,17 @@ body {
   body .botones {
     background-color: #DF2935;
     color: white; }
-  body .botones:hover {
-    background-color: #9A031E;
-    color: white;
-    border: #9A031E solid 1px; }
+    body .botones:hover {
+      background-color: #9A031E;
+      color: white;
+      border: #9A031E solid 1px; }
   body .itemT {
     border: white solid 1px;
     gap: 5px;
     text-align: center;
     padding: 5px; }
-  body .itemT:hover {
-    border: #DF2935 1px solid; }
+    body .itemT:hover {
+      border: #DF2935 1px solid; }
 
 header {
   background: radial-gradient(#DF2935, black); }
