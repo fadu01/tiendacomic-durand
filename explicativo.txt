@@ -1,0 +1,12 @@
+SEO:
+Cambie los titulos de cada pagina del sitio y ahora son todos distintos.
+Agregue etiquetas meta-description con sus respectivas descripciones para cada pagina del sitio.
+Modifique algunos h en todas las paginas.
+
+MAPS, MIXIN Y EXTEND:
+Coloque todas las variables de estas propiedades en el archivo _variables.scss
+Para el Maps, lo utilize en el archivo _footer.scss en la seccion de las redes sociales, colocandole un color de fondo distinto a cada logo.
+Utilize map-get en el archivo _main.scss aplicandole un estilo al primer parrafo (fondo, color de texto y redondeo de los bordes del fondo).
+Aprovechando el estilo aplicado al primer parrafo, utilize un extend en el segundo parrafo para darle el mismo estilo, pero agregandole un transformacion en su texto.
+Para el mixin le di un estilo al titulo h1 con parametros.
+Todos estos cambios se pueden ver aplicados solamente en el index.html, puesto que solo le coloque las clases correspondientes a ese archivo nada mas.

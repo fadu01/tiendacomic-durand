@@ -13,6 +13,21 @@ main {
         text-align: center;
     }
 
+    .estiloParrafo {
+        background-color: map-get($map: $estiloP, $key: bgcolor);
+        color: map-get($map: $estiloP, $key: color);
+        border-radius: map-get($map: $estiloP, $key: borde);
+    }
+
+    .estiloParrafoDos {
+        @extend .estiloParrafo;
+        text-transform: uppercase;
+    }
+
+    .estiloTitulos {
+        @include titulos($color-primario, 5rem, italic, bolder);
+    }
+
     // Locales
     .zonas {
         display: flex;

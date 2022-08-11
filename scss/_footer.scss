@@ -38,6 +38,15 @@ footer {
                     }
                 }
             }
+            .bordeRadial {
+                border-radius: 5px;
+            }
+
+            @each $red, $bgcolor in $mapRedes {
+                .#{$red} {
+                    background-color: $bgcolor;
+                }
+            }
         }
     }
 }

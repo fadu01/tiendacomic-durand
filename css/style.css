@@ -54,6 +54,17 @@ main {
     margin-left: 20px;
     margin-right: 20px;
     text-align: center; }
+  main .estiloParrafo, main .estiloParrafoDos {
+    background-color: lightcoral;
+    color: white;
+    border-radius: 10px; }
+  main .estiloParrafoDos {
+    text-transform: uppercase; }
+  main .estiloTitulos {
+    color: #DF2935;
+    font-size: 5rem;
+    font-style: italic;
+    font-weight: bolder; }
   main .zonas {
     display: flex;
     flex-wrap: wrap;
@@ -129,6 +140,16 @@ footer {
         gap: 10px; }
         footer .listaPie .logoRedes ul li img {
           width: 30px; }
+      footer .listaPie .logoRedes .bordeRadial {
+        border-radius: 5px; }
+      footer .listaPie .logoRedes .facebook {
+        background-color: blue; }
+      footer .listaPie .logoRedes .instagram {
+        background-color: mediumvioletred; }
+      footer .listaPie .logoRedes .whatsapp {
+        background-color: lawngreen; }
+      footer .listaPie .logoRedes .youtube {
+        background-color: darkred; }
 
 /* Media Query */
 @media (max-width: 767px) {
