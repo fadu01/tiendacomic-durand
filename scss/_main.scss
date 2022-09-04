@@ -28,7 +28,7 @@ main {
         @include titulos($color-primario, 5rem, italic, bolder);
     }
 
-    // Locales
+    /* Locales */
     .zonas {
         display: flex;
         flex-wrap: wrap;
@@ -55,6 +55,28 @@ main {
             width: 90%;
         }
     
+    }
+
+    /* Contacto */
+    form {
+        border: #DF2935 solid 2px;
+        padding: 20px;
+        border-radius: 10px;
+
+        .inputRojo:checked {
+                border: #DF2935 solid 2px;
+            }
+
+        .checkTilde:checked {
+            background-color: #DF2935;
+            border: #DF2935;
+        }
+    }
+
+    .formulariosContacto {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 }
 

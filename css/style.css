@@ -48,7 +48,9 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px; }
+  gap: 10px;
+  /* Locales */
+  /* Contacto */ }
   main p {
     width: 90%;
     margin-left: 20px;
@@ -82,6 +84,19 @@ main {
     margin-bottom: 20px; }
     main .seccionMapaLocales iframe {
       width: 90%; }
+  main form {
+    border: #DF2935 solid 2px;
+    padding: 20px;
+    border-radius: 10px; }
+    main form .inputRojo:checked {
+      border: #DF2935 solid 2px; }
+    main form .checkTilde:checked {
+      background-color: #DF2935;
+      border: #DF2935; }
+  main .formulariosContacto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
 
 .cajaVideoMapa .seccionVideo {
   display: flex;
