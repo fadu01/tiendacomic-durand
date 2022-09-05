@@ -1,12 +1,7 @@
 $color-primario: #DF2935;
 
-$mapRedes:(facebook:blue, instagram:mediumvioletred, whatsapp:lawngreen, youtube:darkred);
-
-$estiloP:(bgcolor:lightcoral, borde:10px, color:white);
-
-@mixin titulos($colortext, $size, $style, $peso) {
+@mixin titulos($colortext, $size, $peso) {
     color: $colortext;
     font-size: $size;
-    font-style: $style;
     font-weight: $peso;
 }

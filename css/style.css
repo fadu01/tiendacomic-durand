@@ -41,7 +41,6 @@ header {
     header .botonesBarra ul li a {
       font-weight: bold;
       font-size: 2rem;
-      text-transform: uppercase;
       color: antiquewhite; }
 
 main {
@@ -59,15 +58,13 @@ main {
     margin-right: 20px;
     text-align: center; }
   main .estiloParrafo, main .estiloParrafoDos {
-    background-color: lightcoral;
-    color: white;
-    border-radius: 10px; }
-  main .estiloParrafoDos {
-    text-transform: uppercase; }
+    color: azure;
+    background-color: #DF2935;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px #9A031E; }
   main .estiloTitulos {
     color: #DF2935;
     font-size: 5rem;
-    font-style: italic;
     font-weight: bolder; }
   main .zonas {
     display: flex;
@@ -97,34 +94,41 @@ main {
         background-color: #DF2935;
         border: #DF2935;
         box-shadow: 1px 1px 5px #DF2935; }
-
-.cajaVideoMapa .seccionVideo {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 5px; }
-
-.cajaVideoMapa .seccionUbi {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 5px; }
-  .cajaVideoMapa .seccionUbi .textoUbi {
+  main .cajaVideo .seccionVideo {
     display: flex;
-    flex-direction: row;
-    gap: 20px; }
-
-.algunosProductos {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 10px; }
-  .algunosProductos .textoProducto {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px; }
+  main .cajaVideo .seccionTexto {
     display: flex;
-    gap: 20px; }
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px; }
+    main .cajaVideo .seccionTexto .textoUbi {
+      display: flex;
+      flex-direction: row;
+      gap: 20px; }
+  main .seccionUbi {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px; }
+    main .seccionUbi .textoUbi {
+      display: flex;
+      flex-direction: row;
+      gap: 20px; }
+  main .algunosProductos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px; }
+    main .algunosProductos .textoProducto {
+      display: flex;
+      gap: 20px; }
 
 footer {
   background-color: #DF2935;
@@ -155,16 +159,6 @@ footer {
         gap: 10px; }
         footer .listaPie .logoRedes ul li img {
           width: 30px; }
-      footer .listaPie .logoRedes .bordeRadial {
-        border-radius: 5px; }
-      footer .listaPie .logoRedes .facebook {
-        background-color: blue; }
-      footer .listaPie .logoRedes .instagram {
-        background-color: mediumvioletred; }
-      footer .listaPie .logoRedes .whatsapp {
-        background-color: lawngreen; }
-      footer .listaPie .logoRedes .youtube {
-        background-color: darkred; }
 
 /* Media Query */
 @media (max-width: 767px) {
