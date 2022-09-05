@@ -10,6 +10,8 @@ body {
   body a {
     text-decoration: none;
     color: black; }
+    body a:hover {
+      color: #9A031E; }
   body .botones {
     background-color: #DF2935;
     color: white; }
@@ -84,19 +86,17 @@ main {
     margin-bottom: 20px; }
     main .seccionMapaLocales iframe {
       width: 90%; }
-  main form {
-    border: #DF2935 solid 2px;
-    padding: 20px;
-    border-radius: 10px; }
-    main form .inputRojo:checked {
-      border: #DF2935 solid 2px; }
-    main form .checkTilde:checked {
-      background-color: #DF2935;
-      border: #DF2935; }
   main .formulariosContacto {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; }
+    text-align: center; }
+    main .formulariosContacto form {
+      text-align: start;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 1px 1px 10px #9A031E; }
+      main .formulariosContacto form .checkTilde:checked {
+        background-color: #DF2935;
+        border: #DF2935;
+        box-shadow: 1px 1px 5px #DF2935; }
 
 .cajaVideoMapa .seccionVideo {
   display: flex;

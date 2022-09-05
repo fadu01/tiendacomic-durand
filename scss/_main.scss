@@ -58,25 +58,21 @@ main {
     }
 
     /* Contacto */
-    form {
-        border: #DF2935 solid 2px;
-        padding: 20px;
-        border-radius: 10px;
-
-        .inputRojo:checked {
-                border: #DF2935 solid 2px;
-            }
-
-        .checkTilde:checked {
-            background-color: #DF2935;
-            border: #DF2935;
-        }
-    }
-
     .formulariosContacto {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        text-align: center;
+
+        form {
+            text-align: start;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 1px 1px 10px #9A031E;
+    
+            .checkTilde:checked {
+                background-color: #DF2935;
+                border: #DF2935;
+                box-shadow: 1px 1px 5px #DF2935;
+            }
+        }
     }
 }
 
