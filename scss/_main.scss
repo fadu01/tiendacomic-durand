@@ -5,6 +5,8 @@ main {
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    background: url(../img/fondo.png);
+    background-size: 85px;
 
     p {
         width: 90%;
@@ -14,7 +16,7 @@ main {
     }
 
     .estiloParrafo {
-        color: azure;
+        color: white;
         background-color: #DF2935;
         border-radius: 10px;
         box-shadow: 1px 1px 10px #9A031E;
@@ -25,7 +27,7 @@ main {
     }
 
     .estiloTitulos {
-        @include titulos($color-primario, 5rem, bolder);
+        @include titulos($color-primario, 5rem);
     }
 
     /* Locales */
@@ -62,6 +64,7 @@ main {
         text-align: center;
 
         form {
+            background-color: white;
             text-align: start;
             padding: 20px;
             border-radius: 10px;
@@ -75,26 +78,19 @@ main {
         }
     }
 
-    .cajaVideo {
-        .seccionVideo {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            align-items: center;
-            gap: 5px;
-        }
-        
-        .seccionTexto {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            align-items: center;
-            gap: 5px;
-        
-            .textoUbi {
+    aside {
+        .caruselNoticia {
+            .seccionVideo {
                 display: flex;
-                flex-direction: row;
-                gap: 20px;
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-items: center;
+                gap: 5px;
+            }
+            
+            .seccionTexto {
+                background-color: #f3666f;
+                border-radius: 10px;
             }
         }
     }
@@ -119,6 +115,9 @@ main {
         flex-wrap: wrap;
         align-items: center;
         gap: 10px;
+        .cajaProductos {
+            justify-content: space-around;
+        }
     
         .textoProducto {
             display: flex;
